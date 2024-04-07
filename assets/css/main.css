@@ -3929,4 +3929,10 @@ input, select, textarea {
   .video-cell {
     width: 100%; /* Full width for mobile screens */
   }
+
+  /* Adjust width of iframes to maintain aspect ratio */
+  .video-cell iframe {
+    width: 100%;
+    height: auto;
+  }
 }
