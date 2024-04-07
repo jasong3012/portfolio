@@ -3907,32 +3907,3 @@ input, select, textarea {
 			}
 
 		}
-
-/* Default styles */
-.video-container {
-  display: table;
-  width: 100%;
-}
-
-.video-row {
-  display: table-row;
-}
-
-.video-cell {
-  display: table-cell;
-  width: 50%;
-  padding: 10px;
-}
-
-/* Media query for mobile screens */
-@media screen and (max-width: 600px) {
-  .video-cell {
-    width: 100%; /* Full width for mobile screens */
-  }
-
-  /* Adjust width of iframes to maintain aspect ratio */
-  .video-cell iframe {
-    width: 100%;
-    height: auto;
-  }
-}
