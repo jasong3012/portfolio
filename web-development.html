@@ -53,7 +53,80 @@
 
     /* Common styles for both */
     .responsive-table td {
-        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .responsive-table td.mobile {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .responsive-table td.desktop {
+        width: 66.67%;
+        vertical-align: top;
+    }
+
+    .responsive-table td.desktop-text {
+        width: 33.33%;
+        vertical-align: top;
+        padding: 20px;
+    }
+</style>
+
+<table class="responsive-table" style="border-collapse: collapse; width: 100%;">
+    <!-- Desktop and Tablet layout -->
+    <tr class="desktop-only">
+        <td class="desktop">
+            <img src="images/sps-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
+        </td>
+        <td class="desktop-text" style="padding: 32px;">
+            <h2 style="margin-top: 0;">Seven Peaks Software</h2>
+            <ul>
+		<li style="padding-bottom: 10px;">CMS: Hubspot CMS</li>
+		<li style="padding-bottom: 10px;">Plugins: Zapier, Pipedrive, Google Sheets, Form Submission PDF Generator, LitePics, Sprocket Rocket, Mailchimp</li>
+		<li>Fonts: Lora, Source Sans Pro</li>
+		</ul>
+            <p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+        </td>
+    </tr>
+
+    <!-- Mobile layout -->
+    <tr class="mobile-only">
+        <td class="mobile">
+            <img src="images/sps-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
+        </td>
+    </tr>
+    <tr class="mobile-only">
+        <td class="mobile">
+            <h2 style="margin-top: 0;">Seven Peaks Software</h2>
+            <ul>
+		<li style="padding-bottom: 10px;">CMS: Hubspot CMS</li>
+		<li style="padding-bottom: 10px;">Plugins: Zapier, Pipedrive, Google Sheets, Form Submission PDF Generator, LitePics, Sprocket Rocket, Mailchimp</li>
+		<li>Fonts: Lora, Source Sans Pro</li>
+		</ul>
+            <p style="margin: 0;"><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+        </td>
+    </tr>
+</table>
+
+<style>
+    /* Mobile-only styles */
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+
+    /* Desktop and Tablet-only styles */
+    @media screen and (min-width: 769px) {
+        .mobile-only {
+            display: none;
+        }
+    }
+
+    /* Common styles for both */
+    .responsive-table td {
         overflow: hidden;
     }
 
