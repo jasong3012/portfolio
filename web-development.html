@@ -159,6 +159,7 @@
 </table>
 
 <style>
+    /* Existing styles */
     /* Mobile-only styles */
     @media screen and (max-width: 768px) {
         .desktop-only {
@@ -194,18 +195,54 @@
         vertical-align: top;
         padding: 20px;
     }
+
+    /* Hover effect styles */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hover-image {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #5e42a6;
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .hover-image {
+        filter: blur(5px);
+    }
+
+    .image-container:hover .hover-text {
+        opacity: 1;
+    }
 </style>
 
 <table class="responsive-table" style="border-collapse: collapse; width: 100%;">
     <!-- Desktop and Tablet layout -->
     <tr class="desktop-only">
         <td class="desktop">
-            <img src="images/nn-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
-		<p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+            <div class="image-container">
+                <a href="https://av.nodesnow.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/nn-web-dev-mockup.webp" alt="Nodes Now" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
         <td class="desktop-text" style="padding: 24px;">
             <h2 style="margin-top: 0;">Nodes Now</h2>
-            <ul>
+             <ul>
 		<li style="padding-bottom: 10px;">Features: Minimal, Signup Form, Conversion Rate-Optimized, Animations</li>
 		<li style="padding-bottom: 10px;">Third-Party Integrations: Google Analytics, Google Tag Manager, MoEngage, Google Font API</li>
 		<li style="padding-bottom: 10px;">Plugins: Pipedrive forms</li>
@@ -217,14 +254,18 @@
     <!-- Mobile layout -->
     <tr class="mobile-only">
         <td class="mobile">
-            <img src="images/nn-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
-		<p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+            <div class="image-container">
+                <a href="https://av.nodesnow.com/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/nn-web-dev-mockup.webp" alt="Nodes Now" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
     </tr>
     <tr class="mobile-only">
         <td class="mobile">
             <h2 style="margin-top: 0;">Nodes Now</h2>
-            <ul>
+             <ul>
 		<li style="padding-bottom: 10px;">Features: Minimal, Signup Form, Conversion Rate-Optimized, Animations</li>
 		<li style="padding-bottom: 10px;">Third-Party Integrations: Google Analytics, Google Tag Manager, MoEngage, Google Font API</li>
 		<li style="padding-bottom: 10px;">Plugins: Pipedrive forms</li>
@@ -235,6 +276,7 @@
 </table>
 
 <style>
+    /* Existing styles */
     /* Mobile-only styles */
     @media screen and (max-width: 768px) {
         .desktop-only {
@@ -270,14 +312,50 @@
         vertical-align: top;
         padding: 20px;
     }
+
+    /* Hover effect styles */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hover-image {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #5e42a6;
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .hover-image {
+        filter: blur(5px);
+    }
+
+    .image-container:hover .hover-text {
+        opacity: 1;
+    }
 </style>
 
 <table class="responsive-table" style="border-collapse: collapse; width: 100%;">
     <!-- Desktop and Tablet layout -->
     <tr class="desktop-only">
         <td class="desktop">
-            <img src="images/mph-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
-		<p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+            <div class="image-container">
+                <a href="https://morphos.is/services/seo-company-in-bangkok" target="_blank" rel="noopener noreferrer">
+                    <img src="images/mph-web-dev-mockup.webp" alt="Morphosis" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
         <td class="desktop-text" style="padding: 24px;">
             <h2 style="margin-top: 0;">Morphosis</h2>
@@ -285,16 +363,19 @@
 		<li style="padding-bottom: 10px;">Features: Whitespace, Minimal, SEO-Optimized, Conversion rate-optimized</li>
 		<li style="padding-bottom: 10px;">Third-Party Integrations: Google Analytics, Google Tag Manager, Google Font API, Microsoft Clarity, Mixpanel, Hotjar, Facebook Pixel, Clutch Widget</li>
 		<li style="padding-bottom: 10px;">Plugins: Media Libary, REST Cache, Content Manager, Publisher, Email, Redirects, Internationalization, SEO</li>
-		<li>Fonts: IBM Plex Sans</li>
-		</ul>
+		<li>Fonts: Poppins</li>
         </td>
     </tr>
 
     <!-- Mobile layout -->
     <tr class="mobile-only">
         <td class="mobile">
-            <img src="images/mph-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
-		<p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+            <div class="image-container">
+                <a href="https://morphos.is/services/seo-company-in-bangkok" target="_blank" rel="noopener noreferrer">
+                    <img src="images/mph-web-dev-mockup.webp" alt="Morphosis" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
     </tr>
     <tr class="mobile-only">
@@ -304,13 +385,13 @@
 		<li style="padding-bottom: 10px;">Features: Whitespace, Minimal, SEO-Optimized, Conversion rate-optimized</li>
 		<li style="padding-bottom: 10px;">Third-Party Integrations: Google Analytics, Google Tag Manager, Google Font API, Microsoft Clarity, Mixpanel, Hotjar, Facebook Pixel, Clutch Widget</li>
 		<li style="padding-bottom: 10px;">Plugins: Media Libary, REST Cache, Content Manager, Publisher, Email, Redirects, Internationalization, SEO</li>
-		<li>Fonts: IBM Plex Sans</li>
-		</ul>
+		<li>Fonts: Poppins</li>
         </td>
     </tr>
 </table>
 
 <style>
+    /* Existing styles */
     /* Mobile-only styles */
     @media screen and (max-width: 768px) {
         .desktop-only {
@@ -346,14 +427,50 @@
         vertical-align: top;
         padding: 20px;
     }
+
+    /* Hover effect styles */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hover-image {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #5e42a6;
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .hover-image {
+        filter: blur(5px);
+    }
+
+    .image-container:hover .hover-text {
+        opacity: 1;
+    }
 </style>
 
 <table class="responsive-table" style="border-collapse: collapse; width: 100%;">
     <!-- Desktop and Tablet layout -->
     <tr class="desktop-only">
         <td class="desktop">
-            <img src="images/bike-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
-		<p><a href="#" style="color: #fff; text-decoration: underline;">See website</a></p>
+            <div class="image-container">
+                <a href="https://www.beameo.bike/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/bike-web-dev-mockup.webp" alt="Beameo" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
         <td class="desktop-text" style="padding: 24px;">
             <h2 style="margin-top: 0;">Beameo</h2>
@@ -369,7 +486,12 @@
     <!-- Mobile layout -->
     <tr class="mobile-only">
         <td class="mobile">
-            <img src="images/bike-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
+            <div class="image-container">
+                <a href="https://www.beameo.bike/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/bike-web-dev-mockup.webp" alt="Beameo" class="hover-image">
+                    <div class="hover-text">See website</div>
+                </a>
+            </div>
         </td>
     </tr>
     <tr class="mobile-only">
@@ -381,7 +503,7 @@
 		<li style="padding-bottom: 10px;">Plugins: SEO Wiz, Google Analytics</li>
 		<li>Fonts: Proxima Nova, Wixui Rich Text</li>
 		</ul>
-            <p style="margin: 0;"><a href="#" style="color: #fff; text-decoration: underline;">See more</a></p>
+            <p style="margin: 0;"><a href="https://www.beameo.bike/" style="color: #5e42a6; text-decoration: underline;">See more</a></p>
         </td>
     </tr>
 </table>
