@@ -37,31 +37,51 @@
 							<p>Step into my portfolio, where I proudly present a glimpse of my available (non-confidential) builds across different content management systems.</p>
 
 							<style>
-    @media screen and (max-width: 768px) { /* Mobile screens */
-        .responsive-table td {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            border-radius: 8px;
-            overflow: hidden;
+    /* Mobile-only styles */
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
         }
     }
 
-    @media screen and (min-width: 769px) { /* Desktop and Tablet screens */
-        .responsive-table td {
-            border-radius: 8px;
-            overflow: hidden;
+    /* Desktop and Tablet-only styles */
+    @media screen and (min-width: 769px) {
+        .mobile-only {
+            display: none;
         }
+    }
+
+    /* Common styles for both */
+    .responsive-table td {
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .responsive-table td.mobile {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .responsive-table td.desktop {
+        width: 66.67%;
+        vertical-align: top;
+    }
+
+    .responsive-table td.desktop-text {
+        width: 33.33%;
+        vertical-align: top;
+        padding: 20px;
     }
 </style>
 
 <table class="responsive-table" style="border-collapse: collapse; width: 100%;">
     <!-- Desktop and Tablet layout -->
-    <tr>
-        <td style="width: 66.67%; vertical-align: top;">
+    <tr class="desktop-only">
+        <td class="desktop">
             <img src="images/sps-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
         </td>
-        <td style="width: 33.33%; vertical-align: top; padding: 20px;">
+        <td class="desktop-text">
             <h2 style="margin-top: 0;">Seven Peaks Software</h2>
             <ul>
 		<li style="padding-bottom: 10px;">CMS: Hubspot CMS</li>
@@ -73,13 +93,13 @@
     </tr>
 
     <!-- Mobile layout -->
-    <tr>
-        <td style="padding: 20px;">
+    <tr class="mobile-only">
+        <td class="mobile">
             <img src="images/sps-web-dev-mockup.webp" alt="Image 1" style="display: block; width: 100%; height: auto;">
         </td>
     </tr>
-    <tr>
-        <td style="padding: 20px;">
+    <tr class="mobile-only">
+        <td class="mobile">
             <h2 style="margin-top: 0;">Seven Peaks Software</h2>
             <ul>
 		<li style="padding-bottom: 10px;">CMS: Hubspot CMS</li>
