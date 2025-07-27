@@ -38,7 +38,245 @@
 							<h1 class="major" style="margin-bottom: 24px;">Web Development</h1>
 							<p>Step into my portfolio, where I proudly present a glimpse of my available (non-confidential) builds across different content management systems.</p>
 
-							<style>
+<style>
+    /* Existing styles */
+    /* Mobile-only styles */
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+
+    /* Desktop and Tablet-only styles */
+    @media screen and (min-width: 769px) {
+        .mobile-only {
+            display: none;
+        }
+    }
+
+    /* Common styles for both */
+    .responsive-table td {
+        overflow: hidden;
+    }
+
+    .responsive-table td.mobile {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .responsive-table td.desktop {
+        width: 66.67%;
+        vertical-align: top;
+    }
+
+    .responsive-table td.desktop-text {
+        width: 33.33%;
+        vertical-align: top;
+        padding: 20px;
+    }
+
+    /* List item bullet point size */
+    .responsive-table li {
+        font-size: 16px;
+    }
+
+    /* Hover effect styles */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hover-image {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .hover-image {
+        filter: blur(5px);
+    }
+
+    .image-container:hover .hover-text {
+        opacity: 1;
+    }
+</style>
+
+<table class="responsive-table" style="border-collapse: collapse; width: 100%;">
+    <!-- Desktop and Tablet layout -->
+    <tr class="desktop-only">
+        <td class="desktop">
+            <div class="image-container">
+                <a href="https://www.electrolux.se/discover/saphirmatt-induction-hobs/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/elx-web-dev-mockup-eu.webp" alt="Electrolux Sweden Campaign Page" class="hover-image">
+                    <div class="hover-text" style="color: #5e42a6;">See website</div>
+                </a>
+            </div>
+        </td>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">Electrolux (Sweden)</h2>
+           <ul>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Minimal, Sliders, Icons, Blog</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Contentsquare, Microsoft Clarity, Facebook Pixel, TikTok Pixel, Instana</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Dynamic Yield, Genesys Cloud, Qualtrics</li>
+		<li><b>Fonts:</b> Noto Sans</li>
+		</ul>
+        </td>
+    </tr>
+
+    <!-- Mobile layout -->
+    <tr class="mobile-only">
+        <td class="mobile">
+            <div class="image-container">
+                <a href="https://www.electrolux.se/discover/saphirmatt-induction-hobs/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/elx-web-dev-mockup-eu.webp" alt="Electrolux Sweden Campaign Page" class="hover-image">
+                    <div class="hover-text" style="color: #5e42a6;">See website</div>
+                </a>
+            </div>
+        </td>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">Electrolux (Sweden)</h2>
+           <ul>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Minimal, Sliders, Icons, Blog</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Contentsquare, Microsoft Clarity, Facebook Pixel, TikTok Pixel, Instana</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Dynamic Yield, Genesys Cloud, Qualtrics</li>
+		<li><b>Fonts:</b> Noto Sans</li>
+		</ul>
+        </td>
+    </tr>
+</table>
+
+<style>
+    /* Existing styles */
+    /* Mobile-only styles */
+    @media screen and (max-width: 768px) {
+        .desktop-only {
+            display: none;
+        }
+    }
+
+    /* Desktop and Tablet-only styles */
+    @media screen and (min-width: 769px) {
+        .mobile-only {
+            display: none;
+        }
+    }
+
+    /* Common styles for both */
+    .responsive-table td {
+        overflow: hidden;
+    }
+
+    .responsive-table td.mobile {
+        display: block;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .responsive-table td.desktop {
+        width: 66.67%;
+        vertical-align: top;
+    }
+
+    .responsive-table td.desktop-text {
+        width: 33.33%;
+        vertical-align: top;
+        padding: 20px;
+    }
+
+    /* List item bullet point size */
+    .responsive-table li {
+        font-size: 16px;
+    }
+
+    /* Hover effect styles */
+    .image-container {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .hover-image {
+        width: 100%;
+        height: auto;
+        transition: filter 0.3s ease;
+    }
+
+    .hover-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: bold;
+        font-size: 18px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .image-container:hover .hover-image {
+        filter: blur(5px);
+    }
+
+    .image-container:hover .hover-text {
+        opacity: 1;
+    }
+</style>
+
+<table class="responsive-table" style="border-collapse: collapse; width: 100%;">
+    <!-- Desktop and Tablet layout -->
+    <tr class="desktop-only">
+        <td class="desktop">
+            <div class="image-container">
+                <a href="https://www.electrolux.com.tw/blog/wet-cleaning-range/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/elx-web-dev-mockup-apac.webp" alt="Electrolux Taiwan Campaign Page" class="hover-image">
+                    <div class="hover-text" style="color: #5e42a6;">See website</div>
+                </a>
+            </div>
+        </td>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">Electrolux (Taiwan)</h2>
+           <ul>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Minimal, Sliders, Icons, Blog</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Contentsquare, Microsoft Clarity, Facebook Pixel, TikTok Pixel, Instana</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Dynamic Yield, Genesys Cloud, Qualtrics</li>
+		<li><b>Fonts:</b> Noto Sans</li>
+		</ul>
+        </td>
+    </tr>
+
+    <!-- Mobile layout -->
+    <tr class="mobile-only">
+        <td class="mobile">
+            <div class="image-container">
+                <a href="https://www.electrolux.com.tw/blog/wet-cleaning-range/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/elx-web-dev-mockup-apac.webp" alt="Electrolux Taiwan Campaign Page" class="hover-image">
+                    <div class="hover-text" style="color: #5e42a6;">See website</div>
+                </a>
+            </div>
+        </td>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">Electrolux (Taiwan)</h2>
+           <ul>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Minimal, Sliders, Icons, Blog</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Contentsquare, Microsoft Clarity, Facebook Pixel, TikTok Pixel, Instana</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Dynamic Yield, Genesys Cloud, Qualtrics</li>
+		<li><b>Fonts:</b> Noto Sans</li>
+		</ul>
+        </td>
+    </tr>
+</table>
+							
+<style>
     /* Existing styles */
     /* Mobile-only styles */
     @media screen and (max-width: 768px) {
@@ -234,18 +472,17 @@
     <tr class="desktop-only">
         <td class="desktop">
             <div class="image-container">
-                <a href="https://av.nodesnow.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/nn-web-dev-mockup.webp" alt="Nodes Now" class="hover-image">
-                    <div class="hover-text" style="color: #fff;">See website</div>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="images/solarhash-web-dev-mockup.webp" alt="Solar Hash" class="hover-image">
+                    <div class="hover-text" style="color: #fff;"></div>
                 </a>
             </div>
         </td>
         <td class="desktop-text" style="padding: 24px;">
-            <h2 style="margin-top: 0;">Nodes Now</h2>
+            <h2 style="margin-top: 0;">Solar Hash</h2>
              <ul>
-		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, Minimal, Animations, Conversion Rate-Optimized, Icons, Signup Form</li>
-		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> MoEngage, Google Analytics, Google Tag Manager, Google Font API</li>
-		<li style="padding-bottom: 10px;"><b>Plugins:</b> Pipedrive forms</li>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, Minimal, Animations, Conversion Rate-Optimized, Icons, Web3</li>
+		<li style="padding-bottom: 10px;"><b><em>Prototype</em></li>
 		<li><b>Fonts:</b> IBM Plex Sans</li>
 		</ul>
         </td>
@@ -255,21 +492,18 @@
     <tr class="mobile-only">
         <td class="mobile">
             <div class="image-container">
-                <a href="https://av.nodesnow.com/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/nn-web-dev-mockup.webp" alt="Nodes Now" class="hover-image">
-                    <div class="hover-text" style="color: #fff;">See website</div>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img src="images/solarhash-web-dev-mockup.webp" alt="Solar Hash" class="hover-image">
+                    <div class="hover-text" style="color: #fff;"></div>
                 </a>
             </div>
         </td>
-    </tr>
-    <tr class="mobile-only">
-        <td class="mobile">
-            <h2 style="margin-top: 0;">Nodes Now</h2>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">Solar Hash</h2>
              <ul>
-		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, Minimal, Animations, Conversion Rate-Optimized, Icons, Signup Form</li>
-		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> MoEngage, Google Analytics, Google Tag Manager, Google Font API</li>
-		<li style="padding-bottom: 10px;"><b>Plugins:</b> Pipedrive forms</li>
-		<li><b>Fonts:</b> IBM Plex Sans</li>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, Minimal, Animations, Conversion Rate-Optimized, Icons, Web3</li>
+		<li style="padding-bottom: 10px;"><b><em>Prototype</em></li>
+		<li><b>Fonts:</b> Inter</li>
 		</ul>
         </td>
     </tr>
@@ -464,19 +698,19 @@
     <tr class="desktop-only">
         <td class="desktop">
             <div class="image-container">
-                <a href="https://www.beameo.bike/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/bike-web-dev-mockup.webp" alt="Beameo" class="hover-image">
+                <a href="https://www.uppass.io/blog/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/upp-web-dev-mockup.webp" alt="UpPass Blog Article Page" class="hover-image">
                     <div class="hover-text" style="color: #fff;">See website</div>
                 </a>
             </div>
         </td>
         <td class="desktop-text" style="padding: 24px;">
-            <h2 style="margin-top: 0;">Beameo</h2>
+            <h2 style="margin-top: 0;">UpPass</h2>
             <ul>
-		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Whitespace, Animations, Videos, Blog, SEO-Optimized, Conversion Rate-Optimized</li>
-		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Sentry, RSS, Webpack, Bootstrap UI, Lodash, Fera, Priority Hints</li>
-		<li style="padding-bottom: 10px;"><b>Plugins:</b> SEO Wiz, Google Analytics & Tracking Tools</li>
-		<li><b>Fonts:</b> Proxima Nova, Wixui Rich Text</li>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, YouTube Embedded Videos, Blog, SEO-Optimized, Email Sign-up-Optimized</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Google Analytics, Hotjar, LinkedIn Insight Tag, CookieHub, Keen Slider, Lodash, Priority Hints</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Yoast SEO, Jetpack, Recent Posts Widget With Thumbnails</li>
+		<li><b>Fonts:</b> Sans Serif</li>
 		</ul>
         </td>
     </tr>
@@ -485,21 +719,19 @@
     <tr class="mobile-only">
         <td class="mobile">
             <div class="image-container">
-                <a href="https://www.beameo.bike/" target="_blank" rel="noopener noreferrer">
-                    <img src="images/bike-web-dev-mockup.webp" alt="Beameo" class="hover-image">
+                <a href="https://www.uppass.io/blog/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/upp-web-dev-mockup.webp" alt="UpPass Blog Article Page" class="hover-image">
                     <div class="hover-text" style="color: #fff;">See website</div>
                 </a>
             </div>
         </td>
-    </tr>
-    <tr class="mobile-only">
-        <td class="mobile">
-            <h2 style="margin-top: 0;">Beameo</h2>
+        <td class="desktop-text" style="padding: 24px;">
+            <h2 style="margin-top: 0;">UpPass</h2>
             <ul>
-		<li style="padding-bottom: 10px;"><b>Features:</b> Full-width Layout, Whitespace, Animations, Videos, Blog, SEO-Optimized, Conversion Rate-Optimized</li>
-		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Sentry, RSS, Webpack, Bootstrap UI, Lodash, Fera, Priority Hints</li>
-		<li style="padding-bottom: 10px;"><b>Plugins:</b> SEO Wiz, Google Analytics & Tracking Tools</li>
-		<li><b>Fonts:</b> Proxima Nova, Wixui Rich Text</li>
+		<li style="padding-bottom: 10px;"><b>Features:</b> Whitespace, YouTube Embedded Videos, Blog, SEO-Optimized, Email Sign-up-Optimized</li>
+		<li style="padding-bottom: 10px;"><b>Third-Party Integrations:</b> Google Analytics, Hotjar, LinkedIn Insight Tag, CookieHub, Keen Slider, Lodash, Priority Hints</li>
+		<li style="padding-bottom: 10px;"><b>Plugins:</b> Yoast SEO, Jetpack, Recent Posts Widget With Thumbnails</li>
+		<li><b>Fonts:</b> Sans Serif</li>
 		</ul>
         </td>
     </tr>
