@@ -600,18 +600,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     width: 44px; height: 44px;
     border-radius: 10px;
     background: var(--accent-dim);
-    border: 1px solid rgba(200,169,110,0.15);
+    border: 1px solid rgba(200,169,110,0.2);
     display: flex; align-items: center; justify-content: center;
     margin-bottom: 1.25rem;
-    font-size: 1.1rem;
     position: relative;
     z-index: 1;
+    color: var(--accent);
   }
-  .skill-card:nth-child(2) .skill-icon { background: var(--accent-2-dim); border-color: rgba(124,106,240,0.15); }
-  .skill-card:nth-child(3) .skill-icon { background: var(--teal-dim); border-color: rgba(62,207,164,0.15); }
-  .skill-card:nth-child(4) .skill-icon { background: rgba(224,90,90,0.08); border-color: rgba(224,90,90,0.15); }
-  .skill-card:nth-child(5) .skill-icon { background: rgba(200,169,110,0.08); border-color: rgba(200,169,110,0.12); }
-  .skill-card:nth-child(6) .skill-icon { background: var(--accent-2-dim); border-color: rgba(124,106,240,0.15); }
+  .skill-icon svg {
+    stroke: var(--accent);
+  }
   .skill-card h3 {
     font-family: var(--font-head);
     font-size: 0.95rem;
@@ -805,7 +803,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     white-space: nowrap;
     padding: 0 2.5rem;
   }
-  .ticker-item span.dot { color: var(--accent); font-size: 1rem; }
+  .ticker-item span.dot { font-size: 0.9rem; line-height: 1; }
   @keyframes ticker {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
@@ -909,29 +907,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- Ticker -->
       <div class="ticker-wrap reveal reveal-delay-3">
         <div class="ticker">
-          <span class="ticker-item">Web Development <span class="dot">✦</span></span>
-          <span class="ticker-item">SEO Performance <span class="dot">✦</span></span>
-          <span class="ticker-item">Data &amp; Analytics <span class="dot">✦</span></span>
-          <span class="ticker-item">AI Automation <span class="dot">✦</span></span>
-          <span class="ticker-item">AI Content Creation <span class="dot">✦</span></span>
-          <span class="ticker-item">Creative Assets <span class="dot">✦</span></span>
-          <span class="ticker-item">WordPress <span class="dot">✦</span></span>
-          <span class="ticker-item">HubSpot CMS <span class="dot">✦</span></span>
-          <span class="ticker-item">Make.com <span class="dot">✦</span></span>
-          <span class="ticker-item">Google Analytics 4 <span class="dot">✦</span></span>
-          <span class="ticker-item">ComfyUI <span class="dot">✦</span></span>
+          <span class="ticker-item">Web Development <span class="dot">🖥️</span></span>
+          <span class="ticker-item">SEO Performance <span class="dot">📈</span></span>
+          <span class="ticker-item">Data &amp; Analytics <span class="dot">📊</span></span>
+          <span class="ticker-item">AI Automation <span class="dot">🤖</span></span>
+          <span class="ticker-item">AI Content Creation <span class="dot">✨</span></span>
+          <span class="ticker-item">Creative Assets <span class="dot">🎨</span></span>
+          <span class="ticker-item">WordPress <span class="dot">🌐</span></span>
+          <span class="ticker-item">HubSpot CMS <span class="dot">🔶</span></span>
+          <span class="ticker-item">Make.com <span class="dot">⚡</span></span>
+          <span class="ticker-item">Google Analytics 4 <span class="dot">📉</span></span>
+          <span class="ticker-item">ComfyUI <span class="dot">🖼️</span></span>
           <!-- duplicate for seamless loop -->
-          <span class="ticker-item">Web Development <span class="dot">✦</span></span>
-          <span class="ticker-item">SEO Performance <span class="dot">✦</span></span>
-          <span class="ticker-item">Data &amp; Analytics <span class="dot">✦</span></span>
-          <span class="ticker-item">AI Automation <span class="dot">✦</span></span>
-          <span class="ticker-item">AI Content Creation <span class="dot">✦</span></span>
-          <span class="ticker-item">Creative Assets <span class="dot">✦</span></span>
-          <span class="ticker-item">WordPress <span class="dot">✦</span></span>
-          <span class="ticker-item">HubSpot CMS <span class="dot">✦</span></span>
-          <span class="ticker-item">Make.com <span class="dot">✦</span></span>
-          <span class="ticker-item">Google Analytics 4 <span class="dot">✦</span></span>
-          <span class="ticker-item">ComfyUI <span class="dot">✦</span></span>
+          <span class="ticker-item">Web Development <span class="dot">🖥️</span></span>
+          <span class="ticker-item">SEO Performance <span class="dot">📈</span></span>
+          <span class="ticker-item">Data &amp; Analytics <span class="dot">📊</span></span>
+          <span class="ticker-item">AI Automation <span class="dot">🤖</span></span>
+          <span class="ticker-item">AI Content Creation <span class="dot">✨</span></span>
+          <span class="ticker-item">Creative Assets <span class="dot">🎨</span></span>
+          <span class="ticker-item">WordPress <span class="dot">🌐</span></span>
+          <span class="ticker-item">HubSpot CMS <span class="dot">🔶</span></span>
+          <span class="ticker-item">Make.com <span class="dot">⚡</span></span>
+          <span class="ticker-item">Google Analytics 4 <span class="dot">📉</span></span>
+          <span class="ticker-item">ComfyUI <span class="dot">🖼️</span></span>
         </div>
       </div>
 
@@ -1003,32 +1001,44 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       <div class="skills-grid reveal">
         <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
           <h3>Website Building</h3>
           <p>Specializing in crafting websites from scratch on CMS platforms and optimizing landing pages for higher conversions.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">📊</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
           <h3>Data Analysis</h3>
           <p>With a keen eye for the big picture, I leverage data analytics tools to make informed decisions and pinpoint areas for enhancement.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10"/><path d="M12 6v6l4 2"/><path d="M18 2v4h4"/></svg>
+          </div>
           <h3>Marketing Automation</h3>
           <p>Experienced in designing email marketing flows within CRM platforms and automating manual tasks through workflow solutions.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">✨</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-1 2-2 3.5-2 5a2 2 0 0 0 4 0c0-1.5-1-3-2-5z"/><path d="M6.6 10.6C5 12 4 14 4 16a8 8 0 0 0 16 0c0-2-.9-3.8-2.4-5.2"/><path d="M9 18h6"/></svg>
+          </div>
           <h3>AI Content Creation</h3>
           <p>Using my creativity to craft captivating content for social media, spanning from still images to animated visuals.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🔍</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/><path d="M11 8v6M8 11h6"/></svg>
+          </div>
           <h3>Search Engine Optimization</h3>
           <p>Applying established on-page and off-page SEO strategies to grow organic search visibility and traffic for websites of all sizes.</p>
         </div>
         <div class="skill-card">
-          <div class="skill-icon">🤝</div>
+          <div class="skill-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
           <h3>Collaboration</h3>
           <p>I thrive on teamwork, dedicated to supporting and empowering my teammates, as I believe that greatness is achieved together.</p>
         </div>
