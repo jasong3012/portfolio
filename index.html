@@ -1,18 +1,12 @@
-<!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-	<!-- Google tag (gtag.js) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-J8Z8YR09KZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-	
   gtag('config', 'G-J8Z8YR09KZ');
 </script>
 <!-- Google Tag Manager -->
@@ -22,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NPWXRSPM');</script>
 <!-- End Google Tag Manager -->
-<!-- Hotjar Tracking Code for https://jasong3012.github.io/portfolio/ -->
+<!-- Hotjar -->
 <script>
     (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
@@ -33,6 +27,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 </script>
+<!-- Clarity -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
         c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -40,268 +35,1063 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "o89ov2yagn");
 </script>
-		<title>Jason Grant Marketing Portfolio - Web, SEO, MarTech</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="Jason Grant's marketing portfolio showcasing web development, SEO, data analytics, AI automation, and creative content projects." />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<title>Jason Grant — Web, SEO, MarTech & AI Portfolio</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta name="description" content="Jason Grant's marketing portfolio showcasing web development, SEO, data analytics, AI automation, and creative content projects." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #0a0a0f;
+    --bg-2: #111118;
+    --bg-3: #18181f;
+    --bg-card: #16161c;
+    --border: rgba(255,255,255,0.07);
+    --border-hover: rgba(255,255,255,0.14);
+    --text-primary: #f0ede8;
+    --text-secondary: #9896a0;
+    --text-muted: #5a5865;
+    --accent: #c8a96e;
+    --accent-dim: rgba(200,169,110,0.12);
+    --accent-2: #7c6af0;
+    --accent-2-dim: rgba(124,106,240,0.12);
+    --teal: #3ecfa4;
+    --teal-dim: rgba(62,207,164,0.1);
+    --red: #e05a5a;
+    --font-display: 'DM Serif Display', serif;
+    --font-head: 'Syne', sans-serif;
+    --font-body: 'DM Sans', sans-serif;
+    --nav-w: 220px;
+    --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  /* ── SIDEBAR NAV ── */
+  #sidebar {
+    position: fixed;
+    left: 0; top: 0;
+    width: var(--nav-w);
+    height: 100vh;
+    background: var(--bg-2);
+    border-right: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2.5rem;
+    z-index: 100;
+    transition: transform 0.4s var(--ease);
+  }
+  #sidebar .logo {
+    font-family: var(--font-head);
+    font-weight: 800;
+    font-size: 1.1rem;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    text-decoration: none;
+    margin-bottom: 3rem;
+    display: block;
+  }
+  #sidebar .logo span { color: var(--accent); }
+  #sidebar nav ul { list-style: none; }
+  #sidebar nav ul li { margin-bottom: 0.25rem; }
+  #sidebar nav ul li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-head);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 0.6rem 0.75rem;
+    border-radius: 6px;
+    transition: all 0.2s var(--ease);
+    position: relative;
+  }
+  #sidebar nav ul li a::before {
+    content: '';
+    width: 2px;
+    height: 0;
+    background: var(--accent);
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+    transition: height 0.2s var(--ease);
+    border-radius: 2px;
+  }
+  #sidebar nav ul li a:hover,
+  #sidebar nav ul li a.active {
+    color: var(--text-primary);
+    background: rgba(255,255,255,0.04);
+  }
+  #sidebar nav ul li a.active { color: var(--accent); }
+  #sidebar nav ul li a.active::before { height: 70%; }
+  #sidebar .sidebar-bottom {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 2.5rem;
+    right: 2.5rem;
+  }
+  #sidebar .sidebar-bottom p {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    font-family: var(--font-head);
+  }
+  #sidebar .status-dot {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.7rem;
+    color: var(--teal);
+    font-family: var(--font-head);
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    margin-bottom: 0.5rem;
+  }
+  #sidebar .status-dot::before {
+    content: '';
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--teal);
+    box-shadow: 0 0 6px var(--teal);
+    animation: pulse 2s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.4; }
+  }
+
+  /* Mobile nav toggle */
+  #nav-toggle {
+    display: none;
+    position: fixed;
+    top: 1.25rem; left: 1.25rem;
+    z-index: 200;
+    background: var(--bg-3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    width: 42px; height: 42px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+  #nav-toggle span {
+    display: block;
+    width: 18px; height: 1.5px;
+    background: var(--text-primary);
+    transition: all 0.25s var(--ease);
+    border-radius: 2px;
+  }
+  #nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    z-index: 99;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  /* ── MAIN WRAPPER ── */
+  #wrapper { margin-left: var(--nav-w); }
+
+  /* ── SECTIONS COMMON ── */
+  section { min-height: 100vh; }
+  .inner { max-width: 960px; margin: 0 auto; padding: 6rem 4rem; }
+
+  /* ── HERO ── */
+  #intro {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: var(--bg);
+  }
+
+  .hero-grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+  }
+  .hero-glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(124,106,240,0.15) 0%, transparent 70%);
+    top: -100px; right: -100px;
+    pointer-events: none;
+  }
+  .hero-glow-2 {
+    position: absolute;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(200,169,110,0.1) 0%, transparent 70%);
+    bottom: -50px; left: 10%;
+    pointer-events: none;
+  }
+  #intro .inner {
+    position: relative;
+    z-index: 2;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.5rem;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid rgba(200,169,110,0.25);
+    border-radius: 100px;
+    background: rgba(200,169,110,0.06);
+  }
+  #intro h1 {
+    font-family: var(--font-display);
+    font-size: clamp(3rem, 6vw, 5.5rem);
+    font-weight: 400;
+    line-height: 1.08;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    max-width: 780px;
+  }
+  #intro h1 em {
+    font-style: italic;
+    color: var(--accent);
+  }
+  #intro p {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+    line-height: 1.75;
+  }
+  .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; }
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.85rem 1.75rem;
+    border-radius: 6px;
+    transition: all 0.25s var(--ease);
+    cursor: pointer;
+    border: none;
+  }
+  .btn-primary {
+    background: var(--accent);
+    color: #0a0a0f;
+  }
+  .btn-primary:hover {
+    background: #d9bb80;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(200,169,110,0.25);
+  }
+  .btn-outline {
+    background: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border-hover);
+  }
+  .btn-outline:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .hero-stats {
+    display: flex;
+    gap: 3rem;
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 1px solid var(--border);
+  }
+  .hero-stat-num {
+    font-family: var(--font-head);
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.04em;
+    display: block;
+  }
+  .hero-stat-label {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    letter-spacing: 0.06em;
+    font-family: var(--font-head);
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* ── SCROLL INDICATOR ── */
+  .scroll-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    opacity: 0.35;
+    animation: bounce 2.5s ease-in-out infinite;
+  }
+  .scroll-hint span {
+    font-family: var(--font-head);
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-secondary);
+  }
+  .scroll-hint svg { width: 16px; height: 16px; fill: none; stroke: var(--text-secondary); stroke-width: 1.5; }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(6px); }
+  }
+
+  /* ── SECTION LABELS ── */
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-head);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1.25rem;
+  }
+  .section-label::before {
+    content: '';
+    width: 24px; height: 1px;
+    background: var(--accent);
+  }
+  .section-title {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 400;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+  }
+  .section-sub {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    font-weight: 300;
+    max-width: 520px;
+    line-height: 1.8;
+    margin-bottom: 3.5rem;
+  }
+
+  /* ── WORK / SPOTLIGHTS ── */
+  #one { background: var(--bg-2); min-height: auto; }
+  #one .inner { padding-top: 6rem; padding-bottom: 6rem; }
+  .work-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .work-card {
+    position: relative;
+    background: var(--bg-card);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+  }
+  .work-card:nth-child(1) { grid-column: span 2; aspect-ratio: auto; min-height: 320px; }
+  .work-card:nth-child(5) { grid-column: span 2; aspect-ratio: auto; min-height: 280px; }
+  .work-card img {
+    width: 100%; height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease), filter 0.4s var(--ease);
+    filter: brightness(0.45) saturate(0.7);
+    display: block;
+  }
+  .work-card:hover img {
+    transform: scale(1.04);
+    filter: brightness(0.3) saturate(0.5);
+  }
+  .work-card-body {
+    position: absolute;
+    inset: 0;
+    padding: 1.75rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
+  }
+  .work-card-tag {
+    font-family: var(--font-head);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s var(--ease) 0.05s;
+  }
+  .work-card h3 {
+    font-family: var(--font-head);
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.01em;
+  }
+  .work-card p {
+    font-size: 0.82rem;
+    color: rgba(240,237,232,0.65);
+    line-height: 1.6;
+    font-weight: 300;
+    max-width: 340px;
+    opacity: 0;
+    transform: translateY(8px);
+    transition: all 0.3s var(--ease);
+  }
+  .work-card:hover .work-card-tag,
+  .work-card:hover p {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .work-card-arrow {
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0;
+    transform: scale(0.8) rotate(-45deg);
+    transition: all 0.3s var(--ease);
+    color: var(--text-primary);
+    font-size: 14px;
+  }
+  .work-card:hover .work-card-arrow {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+
+  /* ── WHAT I DO ── */
+  #two {
+    background: var(--bg);
+    min-height: auto;
+  }
+  #two .inner { padding-top: 7rem; padding-bottom: 7rem; }
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+  }
+  .skill-card {
+    background: var(--bg-card);
+    padding: 2.25rem;
+    transition: background 0.25s var(--ease);
+    position: relative;
+    overflow: hidden;
+  }
+  .skill-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--accent-dim);
+    opacity: 0;
+    transition: opacity 0.25s;
+  }
+  .skill-card:hover { background: #1a1a22; }
+  .skill-card:hover::after { opacity: 1; }
+  .skill-icon {
+    width: 44px; height: 44px;
+    border-radius: 10px;
+    background: var(--accent-dim);
+    border: 1px solid rgba(200,169,110,0.15);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1.25rem;
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
+  }
+  .skill-card:nth-child(2) .skill-icon { background: var(--accent-2-dim); border-color: rgba(124,106,240,0.15); }
+  .skill-card:nth-child(3) .skill-icon { background: var(--teal-dim); border-color: rgba(62,207,164,0.15); }
+  .skill-card:nth-child(4) .skill-icon { background: rgba(224,90,90,0.08); border-color: rgba(224,90,90,0.15); }
+  .skill-card:nth-child(5) .skill-icon { background: rgba(200,169,110,0.08); border-color: rgba(200,169,110,0.12); }
+  .skill-card:nth-child(6) .skill-icon { background: var(--accent-2-dim); border-color: rgba(124,106,240,0.15); }
+  .skill-card h3 {
+    font-family: var(--font-head);
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.6rem;
+    letter-spacing: -0.01em;
+    position: relative;
+    z-index: 1;
+  }
+  .skill-card p {
+    font-size: 0.84rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── CONTACT ── */
+  #three {
+    background: var(--bg-2);
+    min-height: auto;
+  }
+  #three .inner { padding-top: 7rem; padding-bottom: 7rem; }
+  .contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+  }
+  .contact-form-wrap { }
+  .form-group {
+    margin-bottom: 1.25rem;
+  }
+  .form-group label {
+    display: block;
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.5rem;
+  }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    background: var(--bg-3);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    font-weight: 300;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    resize: vertical;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: rgba(200,169,110,0.4);
+    box-shadow: 0 0 0 3px rgba(200,169,110,0.08);
+  }
+  .form-group textarea { min-height: 130px; }
+  .btn-submit {
+    width: 100%;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .contact-info { }
+  .contact-cert-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 2rem;
+    display: block;
+    transition: border-color 0.25s;
+  }
+  .contact-cert-img:hover { border-color: var(--accent); }
+  .contact-detail {
+    margin-bottom: 1.75rem;
+  }
+  .contact-detail-label {
+    font-family: var(--font-head);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin-bottom: 0.35rem;
+  }
+  .contact-detail a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+  }
+  .contact-detail a:hover { color: #d9bb80; }
+  .social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--font-head);
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.45rem 0.85rem;
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    transition: all 0.2s var(--ease);
+  }
+  .social-link:hover {
+    border-color: var(--accent);
+    color: var(--accent);
+    background: var(--accent-dim);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--bg);
+    border-top: 1px solid var(--border);
+    padding: 2rem 4rem;
+    margin-left: 0;
+  }
+  footer .inner {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer p {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    font-family: var(--font-head);
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+  footer a:hover { color: #d9bb80; }
+
+  /* ── REVEAL ANIMATIONS ── */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .reveal-delay-1 { transition-delay: 0.1s; }
+  .reveal-delay-2 { transition-delay: 0.2s; }
+  .reveal-delay-3 { transition-delay: 0.3s; }
+  .reveal-delay-4 { transition-delay: 0.4s; }
+
+  /* ── TICKER ── */
+  .ticker-wrap {
+    overflow: hidden;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: var(--bg-3);
+    padding: 0.8rem 0;
+    margin-bottom: 4rem;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  }
+  .ticker {
+    display: flex;
+    gap: 0;
+    width: max-content;
+    animation: ticker 30s linear infinite;
+  }
+  .ticker-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: var(--font-head);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    white-space: nowrap;
+    padding: 0 2.5rem;
+  }
+  .ticker-item span.dot { color: var(--accent); font-size: 1rem; }
+  @keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    :root { --nav-w: 0px; }
+    #sidebar { transform: translateX(-220px); width: 220px; }
+    #sidebar.open { transform: translateX(0); }
+    #nav-overlay.open { display: block; opacity: 1; }
+    #nav-toggle { display: flex; }
+    #wrapper { margin-left: 0; }
+    .work-grid { grid-template-columns: 1fr 1fr; }
+    .work-card:nth-child(1),
+    .work-card:nth-child(5) { grid-column: span 2; }
+    .skills-grid { grid-template-columns: 1fr 1fr; }
+    .contact-layout { grid-template-columns: 1fr; gap: 3rem; }
+    .inner { padding: 5rem 2rem; }
+  }
+  @media (max-width: 640px) {
+    .work-grid { grid-template-columns: 1fr; }
+    .work-card:nth-child(1),
+    .work-card:nth-child(5) { grid-column: span 1; min-height: 240px; }
+    .skills-grid { grid-template-columns: 1fr; }
+    .hero-stats { flex-direction: column; gap: 1.5rem; }
+    #intro h1 { font-size: 2.5rem; }
+    .hero-actions { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+</head>
+<body>
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPWXRSPM"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPWXRSPM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">My Work</a></li>
-							<li><a href="#two">What I do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<!-- Mobile Nav Toggle -->
+<button id="nav-toggle" aria-label="Open navigation">
+  <span></span><span></span><span></span>
+</button>
+<div id="nav-overlay"></div>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up" style="background-image: url(images/gradient-background.gif);">
-						<div class="inner">
-							<h1>Welcome to My Creative Corner!</h1>
-							<p>Discover a Showcase of My Notable Projects, Achievements, and Certifications. <br>Join Me on the Journey!</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Discover More</a></li>
-							</ul>
-						</div>
-					</section>
+<!-- Sidebar -->
+<section id="sidebar">
+  <a href="#intro" class="logo">Jason<span>.</span>Grant</a>
+  <nav>
+    <ul>
+      <li><a href="#intro" class="nav-link active" data-target="intro">Welcome</a></li>
+      <li><a href="#one" class="nav-link" data-target="one">My Work</a></li>
+      <li><a href="#two" class="nav-link" data-target="two">What I Do</a></li>
+      <li><a href="#three" class="nav-link" data-target="three">Get in Touch</a></li>
+    </ul>
+  </nav>
+  <div class="sidebar-bottom">
+    <div class="status-dot">Available for Work</div>
+    <p>Bangkok · GMT+7</p>
+  </div>
+</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section style="background-color: #4a3f78;">
-							<a href="web-development.html" class="image"><img src="images/web-development-cover-ai-generated.webp" alt="Web development portfolio cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Web Development</h2>
-									<p>Discover my craftsmanship in custom web development and design, showcased on platforms like WordPress, HubSpot CMS, Optimizely, and more.</p>
-									<ul class="actions">
-										<li><a href="web-development.html" class="button">Browse Projects</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section style="background-color: #4e437c;">
-							<a href="seo-performance.html" class="image"><img src="images/seo-performance-cover-ai-generated.webp" alt="SEO performance portfolio cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>SEO Performance</h2>
-									<p>Witness the impact of my strategic SEO implementations, driving tangible results for website growth through both on-page and off-page strategies.</p>
-									<ul class="actions">
-										<li><a href="seo-performance.html" class="button">See Proven Results</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section style="background-color: #524780;">
-							<a href="data-and-analytics.html" class="image"><img src="images/data-and-analytics-cover-ai-generated.webp" alt="Data and analytics portfolio cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Data and Analytics</h2>
-									<p>See how I turn complex datasets into clear, decision-driving dashboards through tools like Looker Studio, Google Analytics 4, and Google Search Console.</p>
-									<ul class="actions">
-										<li><a href="data-and-analytics.html" class="button">Dive into the Data</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section style="background-color: #564b84;">
-							<a href="ai-automation.html" class="image"><img src="images/ai-automation-banner.webp" alt="AI automation and chatbot development cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>AI Automation & Chatbot Development</h2>
-									<p>Discover how I use low-code tools like n8n, Make.com, Voiceflow, and VAPI to build intelligent automation workflows and conversational AI agents.</p>
-									<ul class="actions">
-										<li><a href="ai-automation.html" class="button">View AI builds</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section style="background-color: #5a4f88;">
-							<a href="ai-content-creation.html" class="image"><img src="images/ai-content-creation-cover-ai-generated.webp" alt="AI content creation portfolio cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>AI Content Creation</h2>
-									<p>Watch how I fuse AI with storytelling to create cinematic content for social media using tools like ComfyUI, Runway ML, Veo 3, and Kling.</p>
-									<ul class="actions">
-										<li><a href="ai-content-creation.html" class="button">Enter AI-Generated Content</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section style="background-color: #5e538c;">
-							<a href="creative-assets.html" class="image"><img src="images/creative-assets-cover-ai-generated.webp" alt="Creative assets portfolio cover" loading="lazy" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Creative Assets</h2>
-									<p>Explore my portfolio of marketing materials tailored for social media and email marketing campaigns, alongside compelling content writing samples.</p>
-									<ul class="actions">
-										<li><a href="creative-assets.html" class="button">Explore Visual Content</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What I do</h2>
-							<p>As a versatile Website/MarTech specialist, I excel in crafting engaging landing pages and orchestrating dynamic social media and email marketing campaigns across a wide range of tools and platforms.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Website Building</h3>
-									<p>Specializing in crafting websites from scratch on CMS platforms and optimizing landing pages for higher conversions.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Data Analysis</h3>
-									<p>With a keen eye for the big picture, I leverage data analytics tools to make informed decisions and pinpoint areas for enhancement.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Marketing Automation</h3>
-									<p>Experienced in designing email marketing flows within CRM platforms and automating manual tasks through workflow solutions.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>AI Content Creation</h3>
-									<p>Using my creativity to craft captivating content for social media, spanning from still images to animated visuals.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Search Engine Optimization</h3>
-									<p>Applying established on-page and off-page SEO strategies to grow organic search visibility and traffic for websites of all sizes.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Collaboration</h3>
-									<p>I thrive on teamwork, dedicated to supporting and empowering my teammates, as I believe that greatness is achieved together.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="certifications.html" class="button">Certifications</a></li>
-							</ul>
-						</div>
-					</section>
+  <!-- HERO -->
+  <section id="intro">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="inner">
+      <div class="hero-eyebrow">✦ Portfolio 2025</div>
+      <h1>Welcome to My <em>Creative</em> Corner!</h1>
+      <p>Discover a Showcase of My Notable Projects, Achievements, and Certifications. Join Me on the Journey!</p>
+      <div class="hero-actions">
+        <a href="#one" class="btn btn-primary">
+          Discover More
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#three" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats">
+        <div>
+          <span class="hero-stat-num">6+</span>
+          <span class="hero-stat-label">Disciplines</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">AI</span>
+          <span class="hero-stat-label">Powered</span>
+        </div>
+        <div>
+          <span class="hero-stat-num">Full</span>
+          <span class="hero-stat-label">Stack</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+    </div>
+  </section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner" id="contact">
-							<h2>Get in touch</h2>
-							<p>Have a question? Drop me a message below. I'm looking forward to hearing from you!</p>
-							<div class="split style1">
-								<section>
-<form
-  action="https://formspree.io/f/mkndpgqe"
-  method="POST"
->
-  <label>
-    Email:
-    <input type="email" name="email" style="margin-top: 10px;">
-  </label>
-  <label style="padding-top: 20px;">
-    Message:
-    <textarea name="message" style="margin-top: 10px;"></textarea>
-  </label>
-  <button type="submit" style="margin-top: 20px;">Send Message</button>
-</form>			
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-										<a href="certifications.html"><img src="images/certification-collection-front-page.webp" alt="Marketing certification collection" loading="lazy" data-position="center center" style="width:100%; height: auto; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);" /></a>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:jasong3012@gmail.com">Jasong3012@gmail.com</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://g.dev/jasongrant" target="_blank" class="icon solid fa-code"><span class="label">Google for Developers</span></a></li>
-												<li><a href="https://civitai.com/user/JayG_95" target="_blank" class="icon solid fa-robot"><span class="label">CivitAI</span></a></li>
-												<li><a href="https://huggingface.co/MakerJason" target="_blank" class="icon solid fa-smile"><span class="label">Hugging Face</span></a></li>
-												<li><a href="https://github.com/jasong3012" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.linkedin.com/in/jason-grant-mkt/" target="_blank" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-												<li><a href="https://x.com/MakerJasonG" target="_blank" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.tiktok.com/@maker.jason" target="_blank" class="icon brands fa-tiktok"><span class="label">TikTok</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+  <!-- MY WORK -->
+  <section id="one">
+    <div class="inner">
+      <div class="section-label reveal">My Work</div>
+      <h2 class="section-title reveal reveal-delay-1">Projects &amp; Case Studies</h2>
+      <p class="section-sub reveal reveal-delay-2">A cross-disciplinary showcase spanning web builds, growth campaigns, AI tooling, and data-driven decisions.</p>
 
-			</div>
+      <!-- Ticker -->
+      <div class="ticker-wrap reveal reveal-delay-3">
+        <div class="ticker">
+          <span class="ticker-item">Web Development <span class="dot">✦</span></span>
+          <span class="ticker-item">SEO Performance <span class="dot">✦</span></span>
+          <span class="ticker-item">Data &amp; Analytics <span class="dot">✦</span></span>
+          <span class="ticker-item">AI Automation <span class="dot">✦</span></span>
+          <span class="ticker-item">AI Content Creation <span class="dot">✦</span></span>
+          <span class="ticker-item">Creative Assets <span class="dot">✦</span></span>
+          <span class="ticker-item">WordPress <span class="dot">✦</span></span>
+          <span class="ticker-item">HubSpot CMS <span class="dot">✦</span></span>
+          <span class="ticker-item">Make.com <span class="dot">✦</span></span>
+          <span class="ticker-item">Google Analytics 4 <span class="dot">✦</span></span>
+          <span class="ticker-item">ComfyUI <span class="dot">✦</span></span>
+          <!-- duplicate for seamless loop -->
+          <span class="ticker-item">Web Development <span class="dot">✦</span></span>
+          <span class="ticker-item">SEO Performance <span class="dot">✦</span></span>
+          <span class="ticker-item">Data &amp; Analytics <span class="dot">✦</span></span>
+          <span class="ticker-item">AI Automation <span class="dot">✦</span></span>
+          <span class="ticker-item">AI Content Creation <span class="dot">✦</span></span>
+          <span class="ticker-item">Creative Assets <span class="dot">✦</span></span>
+          <span class="ticker-item">WordPress <span class="dot">✦</span></span>
+          <span class="ticker-item">HubSpot CMS <span class="dot">✦</span></span>
+          <span class="ticker-item">Make.com <span class="dot">✦</span></span>
+          <span class="ticker-item">Google Analytics 4 <span class="dot">✦</span></span>
+          <span class="ticker-item">ComfyUI <span class="dot">✦</span></span>
+        </div>
+      </div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Jason Grant. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+      <div class="work-grid reveal">
+        <a href="web-development.html" class="work-card">
+          <img src="images/web-development-cover-ai-generated.webp" alt="Web development portfolio cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">WordPress · HubSpot · Optimizely</div>
+            <h3>Web Development</h3>
+            <p>Discover my craftsmanship in custom web development and design, showcased on platforms like WordPress, HubSpot CMS, Optimizely, and more.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+        <a href="seo-performance.html" class="work-card">
+          <img src="images/seo-performance-cover-ai-generated.webp" alt="SEO performance portfolio cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">On-Page · Off-Page · Growth</div>
+            <h3>SEO Performance</h3>
+            <p>Witness the impact of my strategic SEO implementations, driving tangible results for website growth.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+        <a href="data-and-analytics.html" class="work-card">
+          <img src="images/data-and-analytics-cover-ai-generated.webp" alt="Data and analytics portfolio cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">Looker Studio · GA4 · GSC</div>
+            <h3>Data and Analytics</h3>
+            <p>See how I turn complex datasets into clear, decision-driving dashboards through tools like Looker Studio, GA4, and Search Console.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+        <a href="ai-automation.html" class="work-card">
+          <img src="images/ai-automation-banner.webp" alt="AI automation and chatbot development cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">n8n · Make.com · Voiceflow · VAPI</div>
+            <h3>AI Automation &amp; Chatbot Development</h3>
+            <p>Discover how I use low-code tools to build intelligent automation workflows and conversational AI agents.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+        <a href="ai-content-creation.html" class="work-card">
+          <img src="images/ai-content-creation-cover-ai-generated.webp" alt="AI content creation portfolio cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">ComfyUI · Runway ML · Veo 3 · Kling</div>
+            <h3>AI Content Creation</h3>
+            <p>Watch how I fuse AI with storytelling to create cinematic content for social media.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+        <a href="creative-assets.html" class="work-card">
+          <img src="images/creative-assets-cover-ai-generated.webp" alt="Creative assets portfolio cover" loading="lazy">
+          <div class="work-card-body">
+            <div class="work-card-tag">Social · Email · Copywriting</div>
+            <h3>Creative Assets</h3>
+            <p>Explore my portfolio of marketing materials tailored for social media and email marketing campaigns.</p>
+          </div>
+          <div class="work-card-arrow">→</div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  <!-- WHAT I DO -->
+  <section id="two">
+    <div class="inner">
+      <div class="section-label reveal">Capabilities</div>
+      <h2 class="section-title reveal reveal-delay-1">What I Do</h2>
+      <p class="section-sub reveal reveal-delay-2">As a versatile Website/MarTech specialist, I excel in crafting engaging landing pages and orchestrating dynamic social media and email marketing campaigns across a wide range of tools and platforms.</p>
 
-	</body>
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="skill-icon">🖥️</div>
+          <h3>Website Building</h3>
+          <p>Specializing in crafting websites from scratch on CMS platforms and optimizing landing pages for higher conversions.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📊</div>
+          <h3>Data Analysis</h3>
+          <p>With a keen eye for the big picture, I leverage data analytics tools to make informed decisions and pinpoint areas for enhancement.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚙️</div>
+          <h3>Marketing Automation</h3>
+          <p>Experienced in designing email marketing flows within CRM platforms and automating manual tasks through workflow solutions.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">✨</div>
+          <h3>AI Content Creation</h3>
+          <p>Using my creativity to craft captivating content for social media, spanning from still images to animated visuals.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔍</div>
+          <h3>Search Engine Optimization</h3>
+          <p>Applying established on-page and off-page SEO strategies to grow organic search visibility and traffic for websites of all sizes.</p>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🤝</div>
+          <h3>Collaboration</h3>
+          <p>I thrive on teamwork, dedicated to supporting and empowering my teammates, as I believe that greatness is achieved together.</p>
+        </div>
+      </div>
+
+      <a href="certifications.html" class="btn btn-outline reveal">
+        View Certifications
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- GET IN TOUCH -->
+  <section id="three">
+    <div class="inner">
+      <div class="section-label reveal">Contact</div>
+      <h2 class="section-title reveal reveal-delay-1">Get in Touch</h2>
+      <p class="section-sub reveal reveal-delay-2">Have a question? Drop me a message below. I'm looking forward to hearing from you!</p>
+
+      <div class="contact-layout">
+        <div class="contact-form-wrap reveal">
+          <form action="https://formspree.io/f/mkndpgqe" method="POST">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Tell me about your project…"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Send Message
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg>
+            </button>
+          </form>
+        </div>
+
+        <div class="contact-info reveal reveal-delay-2">
+          <a href="certifications.html">
+            <img src="images/certification-collection-front-page.webp" alt="Marketing certification collection" loading="lazy" class="contact-cert-img">
+          </a>
+          <div class="contact-detail">
+            <div class="contact-detail-label">Email</div>
+            <a href="mailto:jasong3012@gmail.com">jasong3012@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-detail-label">Social</div>
+            <div class="social-links">
+              <a href="https://g.dev/jasongrant" target="_blank" class="social-link">g.dev</a>
+              <a href="https://civitai.com/user/JayG_95" target="_blank" class="social-link">CivitAI</a>
+              <a href="https://huggingface.co/MakerJason" target="_blank" class="social-link">HuggingFace</a>
+              <a href="https://github.com/jasong3012" target="_blank" class="social-link">GitHub</a>
+              <a href="https://www.linkedin.com/in/jason-grant-mkt/" target="_blank" class="social-link">LinkedIn</a>
+              <a href="https://x.com/MakerJasonG" target="_blank" class="social-link">X / Twitter</a>
+              <a href="https://www.tiktok.com/@maker.jason" target="_blank" class="social-link">TikTok</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div><!-- /wrapper -->
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="inner">
+    <p>&copy; 2025 Jason Grant. All rights reserved.</p>
+    <p>Design inspired by <a href="http://html5up.net" target="_blank">HTML5 UP</a></p>
+  </div>
+</footer>
+
+<script>
+  /* ── ACTIVE NAV ON SCROLL ── */
+  const sections = ['intro','one','two','three'];
+  const navLinks = document.querySelectorAll('.nav-link');
+  function updateNav() {
+    let current = 'intro';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - window.innerHeight / 2) current = id;
+    });
+    navLinks.forEach(l => {
+      l.classList.toggle('active', l.dataset.target === current);
+    });
+  }
+  window.addEventListener('scroll', updateNav, { passive: true });
+
+  /* ── REVEAL ON SCROLL ── */
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(el => observer.observe(el));
+
+  /* ── MOBILE NAV ── */
+  const toggle = document.getElementById('nav-toggle');
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('nav-overlay');
+  function openNav() { sidebar.classList.add('open'); overlay.classList.add('open'); }
+  function closeNav() { sidebar.classList.remove('open'); overlay.classList.remove('open'); }
+  toggle.addEventListener('click', openNav);
+  overlay.addEventListener('click', closeNav);
+  document.querySelectorAll('.nav-link').forEach(l => l.addEventListener('click', closeNav));
+</script>
+</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
